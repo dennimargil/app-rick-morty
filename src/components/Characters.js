@@ -1,4 +1,4 @@
-
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 
 export default function Characters(props) {
     const { characters, setCharacters } = props;
@@ -15,7 +15,10 @@ export default function Characters(props) {
             {characters.map((character, index) => (
                 <div className="character-container" key={index}>
                     <div>
+                        <Link to={`/character/${character.id}`}>
                         <img src={character.image} alt={character.name}/>
+                        </Link>
+                        
                     </div>
                     <div>
                         <h3>{character.name}</h3>

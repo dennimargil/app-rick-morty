@@ -126,6 +126,13 @@ body {
   font-size: 15px;
 }
 
+.aback-home {
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 15px;
+}
+
 @media (max-width: 768px) {
   .characters {
     padding: 0 20px;
